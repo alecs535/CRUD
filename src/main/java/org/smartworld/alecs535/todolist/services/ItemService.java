@@ -1,6 +1,6 @@
 package org.smartworld.alecs535.todolist.services;
 
-import org.smartworld.alecs535.todolist.dao.ItemRepository;
+import org.smartworld.alecs535.todolist.repository.ItemRepository;
 import org.smartworld.alecs535.todolist.models.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
