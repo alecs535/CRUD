@@ -1,12 +1,22 @@
 package org.smartworld.alecs535.todolist.controllers;
 
+import org.smartworld.alecs535.todolist.models.Task;
+import org.smartworld.alecs535.todolist.services.TaskService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 import org.smartworld.alecs535.todolist.exceptions.*;
 
 @RestController
 @RequestMapping("todolist")
-public class ListController {
+public class TaskController {
+
+    private TaskService taskService;
+
+    @GetMapping("/task/all")
+    public List<Task> allList() {
+        return taskService.findAll();
+    }
 
     private int counter = 4;
     private List<Map<String, String>> messages = new ArrayList<Map<String, String>>() {{

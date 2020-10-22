@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table(name = "todolist.item")
 public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -8,7 +8,7 @@
     http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd ">
 
     <changeSet id="1" author="alecs535">
-        <createTable tableName="list"
+        <createTable tableName="task"
                      catalogName="todolist"
                      remarks="Дела"
                      schemaName="public"
