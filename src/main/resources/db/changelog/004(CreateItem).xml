@@ -6,7 +6,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
     http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd ">
 
-    <changeSet author="alecs535" id="Cоздание todolist.item" >
+    <changeSet author="alecs535" id="Cоздание todolist.item" runOnChange="true" >
         <createTable tableName="item"
                      remarks="Дела"
                      schemaName="todolist"

@@ -8,8 +8,8 @@
     http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd ">
 
     <includeAll path="config" relativeToChangelogFile="true"/>
-    <include file="changelog/003.xml" relativeToChangelogFile="true"/>
-    <include file="changelog/004.xml" relativeToChangelogFile="true"/>
-    <include file="changelog/005.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/003(CreateTask).xml" relativeToChangelogFile="true"/>
+    <include file="changelog/004(CreateItem).xml" relativeToChangelogFile="true"/>
+    <include file="changelog/005(AddFK).xml"      relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

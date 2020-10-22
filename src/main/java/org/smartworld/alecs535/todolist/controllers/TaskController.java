@@ -1,19 +1,23 @@
 package org.smartworld.alecs535.todolist.controllers;
 
-import org.smartworld.alecs535.todolist.models.Task;
-import org.smartworld.alecs535.todolist.services.TaskService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.smartworld.alecs535.todolist.models.*;
+import org.smartworld.alecs535.todolist.services.*;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 import org.smartworld.alecs535.todolist.exceptions.*;
 
+/**
+ * Класс-контроллер списка дел.
+ */
 @RestController
 @RequestMapping("todolist")
 public class TaskController {
 
+    /** Сервисные функции по работе со списками */
     private TaskService taskService;
 
-    @GetMapping("/task/all")
+    /** @return Функция выдачи всех списков */
+    @GetMapping("/task")
     public List<Task> allList() {
         return taskService.findAll();
     }

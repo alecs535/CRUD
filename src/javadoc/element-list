@@ -1,0 +1,6 @@
+org.smartworld.alecs535.todolist
+org.smartworld.alecs535.todolist.controllers
+org.smartworld.alecs535.todolist.exceptions
+org.smartworld.alecs535.todolist.models
+org.smartworld.alecs535.todolist.repository
+org.smartworld.alecs535.todolist.services
