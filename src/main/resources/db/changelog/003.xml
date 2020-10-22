@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -7,20 +6,20 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
     http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd ">
 
-    <changeSet id="1" author="alecs535">
+    <changeSet author="alecs535" id="Успешное создание todolist.task" runOnChange="true" >
         <createTable tableName="task"
-                     catalogName="todolist"
-                     remarks="Дела"
-                     schemaName="public"
+                     remarks="Список дел"
+                     schemaName="todolist"
                      tablespace="">
             <column name="id" type="UUID">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
-            <column name="createDate" type="DATETIME">
+            <column name="dateCreate" type="DATETIME">
                 <constraints nullable="false"/>
             </column>
-            <column name="modifyDate" type="DATETIME"/>
+            <column name="dateModify" type="DATETIME"/>
             <column name="title" type="varchar(255)"/>
         </createTable>
     </changeSet>
+
 </databaseChangeLog>
